@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    unstaged-file:
+      # the file is unstaged, so this should pass
+      run: if [ -e unstaged-file ]; then exit 1; fi
